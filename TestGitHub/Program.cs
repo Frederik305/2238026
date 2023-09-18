@@ -1,10 +1,31 @@
-﻿namespace TestGitHub
+﻿using System.ComponentModel.Design;
+
+namespace TestGitHub
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            bool b = true;
+            while (b)
+            {
+                Console.WriteLine("Entrer un montant a calculer");
+                string test = Console.ReadLine();
+                try
+                {
+                    int result = Int32.Parse(test);
+                    double TPS = result * 0.05;
+                    double TVQ = result * 0.09975;
+                    double TOTAL = result + (double)TPS + (double)TVQ;
+                    Console.WriteLine(TOTAL);
+                    b= false;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine($"'{test}' is not a valid number");
+                    continue;
+                }
+            }
         }
     }
 }
