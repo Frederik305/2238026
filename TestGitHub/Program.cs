@@ -17,8 +17,8 @@ namespace TestGitHub
                     double TPS = result * 0.05;
                     double TVQ = result * 0.09975;
                     double TOTAL = result + (double)TPS + (double)TVQ;
-                    Console.WriteLine(TOTAL);
-                    b= false;
+                    Console.WriteLine("Resultat: "+TOTAL);
+                    b = false;
                 }
                 catch (FormatException)
                 {
