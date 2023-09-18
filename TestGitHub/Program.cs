@@ -15,7 +15,9 @@ namespace TestGitHub
                 {
                     int result = Int32.Parse(test);
                     double TPS = result * 0.05;
+                    Console.WriteLine("TPS: "+TPS);
                     double TVQ = result * 0.09975;
+                    Console.WriteLine("TVQ: "+TVQ);
                     double TOTAL = result + (double)TPS + (double)TVQ;
                     Console.WriteLine("Resultat: "+TOTAL);
                     b = false;
