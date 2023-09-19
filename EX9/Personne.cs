@@ -34,12 +34,12 @@ namespace EX9
             set { this.age = value; }
         }
 
-        public void Afficher()
+        public virtual void Afficher()
         {
             Console.WriteLine($"Nom: {this.nom} Prenom: {this.prenom} age: {this.age}");
         }
     }
-    class Etudiant : Personne
+    internal class Etudiant : Personne
     {
         private string domaineEtude;
         public Etudiant(string nom, string prenom, int age, string domaineEtude) : base(nom, prenom, age)
@@ -50,6 +50,11 @@ namespace EX9
         {
             get { return this.domaineEtude; }
             set { this.domaineEtude = value; }
+        }
+        public override void Afficher()
+        {
+            base.Afficher();
+            Console.WriteLine($"Domaine: {domaineEtude}");
         }
     }
 }
