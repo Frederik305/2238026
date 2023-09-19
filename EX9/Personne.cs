@@ -34,9 +34,9 @@ namespace EX9
             set { this.age = value; }
         }
 
-        public virtual void Afficher()
+        public override string ToString()
         {
-            Console.WriteLine($"Nom: {this.nom} Prenom: {this.prenom} age: {this.age}");
+            return $"Nom: {this.Nom} \nPrenom: {this.Prenom} \nage: {this.Age}";
         }
     }
     internal class Etudiant : Personne
@@ -51,10 +51,9 @@ namespace EX9
             get { return this.domaineEtude; }
             set { this.domaineEtude = value; }
         }
-        public override void Afficher()
+        public override string ToString()
         {
-            base.Afficher();
-            Console.WriteLine($"Domaine: {domaineEtude}");
+            return base.ToString()+ "\nDomaine d'etude: "+DomaineEtude;
         }
     }
 }

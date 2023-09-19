@@ -6,12 +6,15 @@
         {
             Personne personne1 = new Personne("test", "test", 1);
 
-            personne1.Afficher();
-            personne1.Age = 1;
 
             Personne personne2 = new Personne("Jeff", "Erson", 18);
 
-            personne2.Afficher();
+
+
+            Etudiant etudiant1 = new Etudiant("Jeff", "Erson", 1, "Math");
+
+
+            Console.WriteLine(etudiant1);
         }
     }
 }
