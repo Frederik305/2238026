@@ -11,10 +11,14 @@
 
 
 
-            Etudiant etudiant1 = new Etudiant("Jeff", "Erson", 1, "Math");
+            Etudiant etudiant1 = new Etudiant("Jeff", "Erson", 1, "Buisness");
 
 
             Console.WriteLine(etudiant1);
+
+            Etudiant etudiant2 = new Etudiant("Joe", "Blo", 10, "Info");
+
+            Console.WriteLine(etudiant2);
         }
     }
 }

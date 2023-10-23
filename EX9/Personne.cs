@@ -36,7 +36,7 @@ namespace EX9
 
         public override string ToString()
         {
-            return $"Nom: {this.Nom} \nPrenom: {this.Prenom} \nage: {this.Age}";
+            return $"Nom: {this.Nom} \nPrenom: {this.Prenom} \nAge: {this.Age}";
         }
     }
     internal class Etudiant : Personne
